@@ -4,7 +4,8 @@
   --color-bg-white: #FBFBFB;
   --color-bg-light: #f5f5f7;
   --color-text-dark: #1d1d1f;
-  --color-blue-outline: #0071e3;
+  --color-text-gray: #86868b;
+  --color-blue-link: #0071e3;
   --color-blue-light-gradient-start: #D5EAF6;
   --color-blue-light-gradient-end: #FEFEFE;
   --color-blue-gradient-start: #022640;
@@ -20,13 +21,64 @@ body {
   font-family:var(--font-family-primary);
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-blue-link);
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+button {
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 50rem;
+  padding: 1rem 1.65rem;
+  background-color: var(--color-blue-link);
+  color: var(--color-bg-white);
+}
+
+button:focus, button:hover {
+  background: #0077ed;
+  cursor: pointer;
+}
+
+em {
+  color: var(--color-text-dark);
+  font-style: normal;
+}
+
+sup {
+  position: relative;
+  font-size: .6em;
+  vertical-align: middle;
+  bottom: .5em;
+  left: -.2em;
+}
+
 /* ---------------------------------------------------------------
-    Text styles
+    Text colors
 ----------------------------------------------------------------*/
 .gradient-text-blue {
   background: linear-gradient(to right, var(--color-blue-gradient-start), var(--color-blue-gradient-end));
   background-clip: text;
   color: transparent;
+}
+
+.gradient-text-colorful {
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/fx/gradient.jpg");
+  color: transparent;
+}
+
+.gray-text {
+  color: var(--color-text-gray);
 }
 
 /* ---------------------------------------------------------------
@@ -76,14 +128,35 @@ header {
   height: auto;
 }
 
-#apple-intelligence-text {
-  background-clip: text;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../images/fx/gradient.jpg");
+.main__copy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__copy-text {
+  font-size: 2.5rem;
   font-weight: 600;
-  font-size: 24px;
-  color: transparent;
+  letter-spacing: -.05em;
+  margin-bottom: 1.5rem;
+}
+
+.main__pricing {  
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.main__description {
+  width: 60%;
+  margin-top: 4rem;
+}
+
+.main__description-text {
+  font-size: 1.85rem;
+  line-height: 2rem;
+  text-align: center;
+  font-weight: 600;
 }
 
 /* ---------------------------------------------------------------
@@ -147,7 +220,7 @@ header {
 }
 
 .colornav-item.current {
-  outline: 3px solid var(--color-blue-outline);
+  outline: 3px solid var(--color-blue-link);
   outline-offset: 2px;
 }
 

@@ -29,6 +29,12 @@ a:hover {
   color: var(--color-blue-link);
 }
 
+h1, h2, h3 {
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
 p {
   font-size: 1.25rem;
 }
@@ -98,16 +104,15 @@ header {
   align-items: center;
   justify-content: center;
   padding-top: 10rem;
+  padding-bottom: 8.75rem;
   background: linear-gradient(to bottom, var(--color-blue-light-gradient-start), var(--color-blue-light-gradient-end));
 }
 
 .main__title {
   font-size: 2.25rem;
   line-height: 1.125;
-  font-weight: 600;
   letter-spacing: .004em;
   color: var(--color-text-dark);
-  margin: 0;
 }
 
 .main__paragraph {
@@ -133,10 +138,11 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .main__copy-text {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 600;
   letter-spacing: -.05em;
   margin-bottom: 1.5rem;
@@ -152,24 +158,56 @@ header {
   margin-top: 4rem;
 }
 
-.main__description-text {
-  font-size: 1.85rem;
-  line-height: 2rem;
-  text-align: center;
+.main__description-text,
+.section-design__copy-text {
+  font-size: 1.5rem;
+  line-height: 1.6rem;
   font-weight: 600;
 }
 
 /* ---------------------------------------------------------------
     Sections
 ----------------------------------------------------------------*/
-.section {
-  padding: 4rem 0;
-  text-align: center;
+.section-design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.section img {
-  max-width: 100%;
-  height: auto;
+.section-design__header, 
+.section-design__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 75%;
+}
+
+.section-design__title {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-text-dark);
+}
+
+.section-design__media {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2.5rem 0;
+}
+
+.section-design__media-image {
+  width: 1728px;
+  height: 667px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.section-design__subtitle {
+  font-size: 4.5rem;
+  font-weight: 600;
 }
 
 /* ---------------------------------------------------------------

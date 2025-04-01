@@ -22,29 +22,54 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
-  <!-- lib skeleton -->
-  <link rel="stylesheet" href="./vendor/skeleton/skeleton.css">
-
-
 </head>
 
 <body>
 
   <!-- header -->
-  <header>
-    <div class="container">
-      <h1 class="text-mac">MacBook Air</h1>
-      <p class="gradient-text-blue">Superleve. Superpotente. Agora com chip M3.</p>
-    </div>
+  <header class="header">
   </header>
 
-  <!-- main image -->
-  <div class="container" id="main-container">
-    <img class="hero-image" src="./src/images/sections/hero_static__2x.png" alt="MacBook Air">
-    <p id="apple-intelligence-text">Feito para Apple Intelligence.</p>
-    <button class="button">Ver Preços</button>
-  </div>
+  <!-- main  -->
+  <main class="main">
+    <div class="main__container">
+      <h1 class="main__title">MacBook Air</h1>
+      <p class="main__paragraph gradient-text-blue">Velocidade no ar.</p>
+      <div class="main__media-container">
+        <img class="main__media-image" src="./src/images/sections/hero_static__2x.png" alt="MacBook Air">
+      </div>
+      <div class="main__copy-container">
+        <p class="main__copy-text">Feito para Apple Intelligence.</p>
+        <a href="" class="main__link">
+          <button class="main__button">Ver Preços</button>
+        </a>
+        <p class="main__pricing">A partir de R$ 1.083,25/mês ou R$ 12.999*</p>
+        <p class="main__availability">Confira em breve a disponibilidade.</p>
+        <p class="main__language">
+          A Apple Intelligence já está disponível em português do Brasil
+          <sup class="footnote footnote-number">
+            <a href="#" aria-label="Nota de rodapé 1">1</a>
+          </sup>
+        </p>
+        <div class="main__description">
+          <p>
+            O MacBook Air com chip M4 foi feito para você arrasar em tudo o que faz, com
+            <em>até 18 horas de bateria
+              <sup class="footnote footnote-number"></sup>
+                <a href="#" aria-label="Nota de rodapé 2">2</a>
+              </sup>
+            </em>.
+            Ele é feito para <em>Apple Intelligence</em> e ajuda a resolver a vida sem esforço
+            <sup class="footnote footnote-number"></sup>
+              <a href="#" aria-label="Nota de rodapé 1">1</a>
+            </sup>.
+            E ficou ainda mais encantador na cor azul-céu. O MacBook Air é tão perfeito e tão portátil que vai para
+            qualquer lugar e faz de tudo com você.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <!-- size section -->
   <section class="section">

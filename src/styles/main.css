@@ -29,14 +29,14 @@ a:hover {
   color: var(--color-blue-link);
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   font-weight: 600;
   margin: 0;
   padding: 0;
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 
 button {
@@ -64,6 +64,14 @@ sup {
   vertical-align: middle;
   bottom: .5em;
   left: -.2em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 75%;
 }
 
 /* ---------------------------------------------------------------
@@ -117,7 +125,6 @@ header {
 
 .main__paragraph {
   font-size: 4.25rem;
-  font-weight: 600;
   letter-spacing: -.05em;
 }
 
@@ -158,6 +165,11 @@ header {
   margin-top: 4rem;
 }
 
+.main__availability,
+.main__language {
+  font-weight: 400;
+}
+
 .main__description-text,
 .section-design__copy-text {
   font-size: 1.5rem;
@@ -173,15 +185,6 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-}
-
-.section-design__header, 
-.section-design__copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  width: 75%;
 }
 
 .section-design__title {
@@ -208,6 +211,25 @@ header {
 .section-design__subtitle {
   font-size: 4.5rem;
   font-weight: 600;
+}
+
+.subsection-size__screen {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  background: url("../images/sections/design_sizes_endframe__ckfqlo8f44eq_large_2x.jpg");
+  background-position: center;
+  background-size: contain;
+  height: 800px;
+}
+
+.subsection-size__screen-text {
+  font-size: 4.5rem;
+}
+
+.subsection-size__screen-text span {
+  display: block;
+  font-size: 2rem;
 }
 
 /* ---------------------------------------------------------------

@@ -14,14 +14,7 @@
   <link rel="stylesheet" href="./vendor/reset/reset.css">
 
   <!-- page styles -->
-  <link rel="stylesheet" href="./src/styles/menu.css">
   <link rel="stylesheet" href="./src/styles/main.css">
-
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
 </head>
 
 <body>
@@ -109,25 +102,33 @@
         </p>
       </div>
 
+      <div class="subsection-colors">
+        <div class="subsection-colors__grid">
+          <img id="imageSide" src="./src/images/colors/design_side_skyblue.jpg" alt="Design Side" class="subsection-colors__grid-item a">
+
+          <img id="imageMagsafe" src="./src/images/colors/design_magsafe_skyblue.jpg" alt="Design Magsafe" class="subsection-colors__grid-item b">
+
+          <div class="subsection-colors__grid-item c">
+            <img id="imageTop" src="./src/images/colors/design_top_skyblue.jpg" alt="Design Top">
+
+            <fieldset class="colornav subsection-colors__grid-item">
+              <ul class="colornav-items">
+                <li class="colornav-item current" data-color="skyblue"></li>
+                <li class="colornav-item" data-color="silver"></li>
+                <li class="colornav-item" data-color="starlight"></li>
+                <li class="colornav-item" data-color="midnight"></li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+      <p class="subsection-size__description gray-text">
+        <em>Nova cor. Tudo azul.</em>
+        São quatro cores divinas para você escolher. Uma delas é a nova azul-céu. E todos os modelos de MacBook Air vêm com um cabo MagSafe na mesma cor.
+      </p>
     </section>
-  </section>
-
-  <!-- color select -->
-  <div class="container" id="color-container">
-
-    <div id="get-color">
-      <img src="./src/images/colors/silver.jpg" id="dinamic-color" alt=""">
-    </div>
-
-    <fieldset class=" colornav">
-      <ul class="colornav-items">
-        <li class="colornav-item current" data-color="blue-sky"></li>
-        <li class="colornav-item" data-color="midnight"></li>
-        <li class="colornav-item" data-color="silver"></li>
-        <li class="colornav-item" data-color="stelar"></li>
-      </ul>
-      </fieldset>
-    </article>
+  </article>
 
     <!-- footer -->
     <footer>

@@ -38,6 +38,7 @@ h1, h2, h3, p {
 
 p {
   font-size: 1.25rem;
+  color: var(--color-text-gray);
 }
 
 button {
@@ -92,10 +93,6 @@ section {
   color: transparent;
 }
 
-.gray-text {
-  color: var(--color-text-gray);
-}
-
 .description-text {
   font-size: 1.5rem;
   line-height: 1.6rem;
@@ -111,7 +108,7 @@ section {
   align-items: center;
   justify-content: center;
   padding: 8rem 0;
-  background: linear-gradient(to bottom, var(--color-blue-light-gradient-start), var(--color-blue-light-gradient-end));
+  background: linear-gradient(to bottom, var(--color-blue-light-gradient-start), var(--color-blue-light-gradient-end), var(--color-bg-white));
 }
 
 .main__title,
@@ -159,11 +156,13 @@ section {
 .main__pricing {
   font-weight: 700;
   margin-top: 1.5rem;
+  color: var(--color-text-dark);
 }
 
 .main__availability,
 .main__language {
   font-weight: 400;
+  color: var(--color-text-dark);
 }
 
 .main__description {
@@ -220,6 +219,10 @@ section {
 .subsection-size__screen-text,
 .section-design__subtitle {
   font-size: 4.5rem;
+}
+
+.subsection-size__screen-text {
+  color: var(--color-text-dark);
 }
 
 .subsection-size__screen-text span {
@@ -320,6 +323,7 @@ footer {
 
 footer p, footer span {
   font-size: 0.9rem;
+  color: var(--color-text-gray);
 }
 
 footer span {

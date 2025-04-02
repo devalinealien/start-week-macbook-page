@@ -34,8 +34,6 @@ a:hover {
 
 h1, h2, h3, p {
   font-weight: 600;
-  margin: 0;
-  padding: 0;
 }
 
 p {
@@ -198,7 +196,6 @@ header {
 
 .section-design__media {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
   padding: 2.5rem 0;
 }
@@ -206,8 +203,15 @@ header {
 .section-design__media-image {
   width: 1728px;
   height: 667px;
-  object-fit: cover;
   object-position: top;
+  object-fit: cover;
+}
+
+@media (max-width: 734px) {
+  .section-design__media-image {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .section-design__subtitle {

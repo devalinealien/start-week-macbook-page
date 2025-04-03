@@ -10,7 +10,7 @@ Se você quer explorar técnicas modernas de estilização, estruturação semâ
 
 ## 📸 Preview  
 
-[🔗 Acesse o site aqui](https://devalinealien.github.io/start-week-macbook-page/)  
+[🔗 Página Clone MacBook Air](https://devalinealien.github.io/start-week-macbook-page/)  
 
 ![Preview do Projeto](./src/assets/images/preview.jpg)  
 *Uma prévia da landing page clonada, trazendo a elegância do site original da Apple.*  
